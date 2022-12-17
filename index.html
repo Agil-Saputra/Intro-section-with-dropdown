@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="flex justify-between items-center md:justify-start md:gap-16 p-[1rem] ">
+      <img src="images/logo.svg" alt="" class=" translate-y-1"/>
+      <div id="burger" class="flex flex-col z-30 md:hidden">
+        <span class="burger-span origin-top-left transition1"></span>
+        <span class="burger-span transition1"></span>
+        <span class="burger-span origin-bottom-left transition1"></span>
+      </div>
+
+      <nav
+        id="nav-menu"
+        class="hidden absolute right-0 top-0 h-full bg-white pt-[3rem] px-3  md:px-0  w-[50%] shadow-2xl shadow-gray-300 md:flex md:bg-transparent md:shadow-none md:h-auto md:items-center md:pt-0 md:justify-between md:relative  md:w-[100%] z-10"
+      >
+        <ul class="flex flex-col md:gap-10 gap-5 mt-2 md:flex-row ">
+          <li id="feature" class="feature hover1">Feature</li>
+          <ul id="feature-menu" class="pl-4 hidden md:absolute md:top-[4rem] md:shadow-md md:shadow-gray-400 md:-left-20  md:p-5 md:px-8 md:rounded-xl">
+            <li class="flex items-center gap-2 mt-2">
+              <img src="images/icon-todo.svg" alt="" />
+              <a href="">Todo List</a>
+            </li>
+
+            <li class="flex items-center gap-2 mt-2 ">
+              <img src="images/icon-calendar.svg" alt="" />
+              <a href="">Calendar</a>
+            </li>
+
+            <li class="flex items-center gap-2 mt-2 ">
+              <img src="images/icon-reminders.svg" alt="" />
+              <a href="">Reminders</a>
+            </li>
+
+            <li class="flex items-center gap-2 mt-2 ">
+              <img src="images/icon-planning.svg" alt="" />
+              <a href="">Planning</a>
+            </li>
+
+          </ul>
+          <li id="company" class="company hover1">Company</li>
+
+          <ul id="company-menu" class="pl-4 hidden md:absolute md:shadow-md md:shadow-gray-400 md:left-[7rem]  md:p-5 md:px-8 md:rounded-xl md:top-[4rem] relative z-[1]">
+            <li class="flex items-center gap-2 mt-2">
+              <a href="">History</a>
+            </li>
+
+            <li class="flex items-center gap-2 mt-2 ">
+              <a href="">Our Team</a>
+            </li>
+
+            <li class="flex items-center gap-2 mt-2 ">
+              <a href="">Blog</a>
+            </li>
+
+          </ul>
+          <li class="hover1"><a href="">Careers</a></li>
+
+          <li class="hover1"><a href="">About</a></li>
+        </ul>
+
+        <div class="flex flex-col text-center gap-2 p-5 md:flex-row md:items-center md:mx-0 md:p-0 md:gap-10 md:translate-y-1"  >
+          <a href="" class="hover1">Login</a>
+          <a href="" class="border-2 border-black rounded-lg md:py-2 md:px-5 hover1">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="md:flex md:flex-row-reverse md:items-center md:gap-40 ">
+      <picture>
+        <source media="(min-width:768px)" srcset="images/image-hero-desktop.png" >
+        <img src="images/image-hero-mobile.png" alt="" class="md:pl-[3rem] lg:w-[80%]" >
+      </picture>
+      <div class="text-center md:text-left md:pl-[8rem] relative -z-[-1] md:mt-[8rem]">
+      <h1 class="text-[2.5rem] md:text-[5rem] my-5 font-bold ">Make remote work</h1>
+      <p>Get your team
+        in sync, no matter your location. Streamline processes, create team rituals,
+        and watch productivity soar.</p>
+        <button href="" class="border-2 border-black rounded-lg px-3 py-2 text-white bg-black font-bold mt-8 animate-bounce relative  hover:bg-white hover:text-slate-900 transition duration-300 ease-in-out ">Learn more</button>
+        <div class="flex w-[100%] items-center justify-center gap-5 mt-[3rem] mb-20">
+          <img src="images/client-databiz.svg" alt="" srcset="" width="20%">
+          <img src="images/client-audiophile.svg" alt="" srcset="" width="20%">
+          <img src="images/client-meet.svg" alt="" srcset="" width="20%">
+          <img src="images/client-maker.svg" alt="" srcset=""width="20%">
+        </div>
+    </div>
+    </main>
+
+
+
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> --> 
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

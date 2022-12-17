@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:  hsl(0, 0%, 98%);
+}
+
+.burger-span {
+@apply bg-black h-[2px] w-[30px] block my-1
+}
+
+.burger-active > span:nth-child(1) {
+    @apply rotate-45 
+}
+.burger-active > span:nth-child(2) {
+    @apply scale-0
+}
+.burger-active > span:nth-child(3) {
+    @apply -rotate-45 
+}
+
+.transition1 {
+    @apply transition-all duration-200 ease-in-out
+}
+
+.feature {
+    @apply after:content-[url(images/icon-arrow-down.svg)] after:ml-2
+}
+
+.feature-after{
+    @apply after:content-[url(images/icon-arrow-up.svg)]
+}
+
+
+
+.company {
+    @apply after:content-[url(images/icon-arrow-down.svg)] after:ml-2 
+}
+
+.company-after{
+    @apply after:content-[url(images/icon-arrow-up.svg)]
+}
+
+.hover1{
+   @apply opacity-50 hover:opacity-100
+}
